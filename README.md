@@ -15,7 +15,7 @@ curl --output anaconda.sh https://repo.anaconda.com/archive/Anaconda3-2024.02-1-
 ## Run node
 
 ```bash
-rm heurist.sh && wget https://raw.githubusercontent.com/annhoami/heurist-ai/main/heurist.sh && chmod +x heurist.sh && ./heurist.sh
+wget https://raw.githubusercontent.com/annhoami/heurist-ai/main/heurist.sh && chmod +x heurist.sh && ./heurist.sh
 ```
 
 ```bash
