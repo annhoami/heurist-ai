@@ -21,12 +21,6 @@ sudo apt update & sudo apt upgrade -y
 sudo apt install python3-venv curl git -y
 echo
 
-echo -e "${BOLD}${DARK_YELLOW}Installing Anaconda...${RESET}"
-cd $HOME
-curl --output anaconda.sh https://repo.anaconda.com/archive/Anaconda3-2024.02-1-Linux-x86_64.sh && bash anaconda.sh
-conda init bash && source ~/.bashrc && conda create --name gpu-3-11 python=3.11 -y && conda activate gpu-3-11
-echo
-
 echo -e "${BOLD}${DARK_YELLOW}Installing pytorch and other libs...${RESET}"
 cd $HOME
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
